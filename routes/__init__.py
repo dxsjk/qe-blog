@@ -23,5 +23,6 @@ login_manager = LoginManager(app)
 migrate = Migrate(app, db)
 from routes import article_routes, user_routes, image_routes,admin_routes,cal_routes
 from models import users, article
-with app.app_context():
-    db.create_all()
+
+
+
