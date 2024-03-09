@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 COPY . /opt/myblog/
-WORKDIR /apt/myblog/
+WORKDIR /opt/myblog/
 
 RUN apt-get update
 RUN apt-get install -y python3.11 python3-pip
