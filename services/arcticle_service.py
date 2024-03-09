@@ -64,7 +64,6 @@ class ArticleService:
             return False, '文章不存在'
         else:
             try:
-                # todo 检查标题是否重复
                 existing_article = db.session.query(Article).filter(Article.title == article.title,
                                                                     Article.id != article.id).first()
                 if existing_article:
